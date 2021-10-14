@@ -6,10 +6,7 @@
 * [x] Arrays
 * [x] Functions 
 * [x] Conditions
-* [x] Switch 
-* [x] loops
-* [x] Exponent Functions
-* [x] 2d arrays 
+
 * [x] comments 
 * [x] Pointers
 * [x] Classes & objects
@@ -32,8 +29,11 @@
  C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs. C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
 
 ## variables & data types
-Boolean(yes/no)
-int(interger)
+variables are containers for storing data values.
+eg int name
+
+Boolean(yes/no) -1 & 0
+int(interger) 
 char (character)
 float (decimal numbers with limited precison)
 double(decimal with no limit) are common types of ddata types 
@@ -52,13 +52,25 @@ double(decimal with no limit) are common types of ddata types
 
 
 
- #
+ ## conditions
+ if
+ else
+ else if
+ switch
+ common conditional statements
 
-#
-sx
-## 
 
 
+
+## Loops
+in c++ loops are used to repeat some actions under certain conditions meet
+for loop,while loop,do while loop are common types of loops
+
+## comments
+comments are not compiled 0r build,its completely for develupers for further reference about line of programs.
+
+## pointers
+pointers are address locations of the variables.eg int num. (here value of the variable is stored in a particular location & pointers are used to output the address of varibles.* is used to display the address.
 
 ----
 
