@@ -58,16 +58,22 @@ double(decimal with no limit) are common types of ddata types
  else if
  switch
  common conditional statements
-
+eg if(a>b)
+{
+    cout<<"a">>;
+}else{
+    cout<<"b">>;
+}
 
 
 
 ## Loops
 in c++ loops are used to repeat some actions under certain conditions meet
 for loop,while loop,do while loop are common types of loops
+ eg for(i=0;i<num;i++>)
 
 ## comments
-comments are not compiled 0r build,its completely for develupers for further reference about line of programs.
+comments are not compiled 0r build,its completely for develupers for further reference about line of programs. eg //comment
 
 ## pointers
 pointers are address locations of the variables.eg int num. (here value of the variable is stored in a particular location & pointers are used to output the address of varibles.* is used to display the address.
@@ -83,3 +89,47 @@ pointers are address locations of the variables.eg int num. (here value of the v
  ## 
 
 
+#  FLUTTER
+
+
+* [x] Intro
+* [x] Dart basics
+* [x] 
+* [x] 
+
+
+
+
+## intro
+flutter enables  multi platform app develepment.Dart langauge is used in it.
+
+## Dart
+dart is language similiar to javascript.in dart we cannot change the data type of a string type after assigning to a value.if need we need to change ,use dynamic 
+eg string name="kiran";
+   name="30" // shows error
+   in such case 
+   dynamic name="kiran"
+   name=30;
+
+   functions in dart similiar to other types  of language.
+   "list" is used instead of arrays in dart
+    eg list<String> name=[ab,bc];// stores array of string.
+
+
+    in dart classes & instances are used frequently.
+    
+    
+    eg   
+    void main(){
+        book novel=book();  //a instance of class created
+        print(novel.author); // calling a class function 
+        book poem=book();  // new instance of class
+    }
+    
+    class book{
+        string author; // contents of book()
+        int pages;
+        void publisher(){
+            print("crime novel 1");
+        }
+    }
