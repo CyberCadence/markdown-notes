@@ -133,3 +133,41 @@ eg string name="kiran";
             print("crime novel 1");
         }
     }
+    
+## first sample app
+
+app are made with widgets.each terms in app are widgets,
+dart documentations & android studio suggestions helps in coding.
+comments are added by ide itself .
+
+pubspec.yaml  is file type used to store resources such as images to show in flutter. intentations are very sensitive in .yaml file & yaml is also a markup language.
+by connecting a physical device by ussb rendering, to studio we can avoid using emulator. 
+
+
+## MATERIAL theme
+its launched by google,can be used in both ios & andro.
+import 'package:flutter/material.dart';//for material theme 
+
+## containers 
+its  simple widget,only 1 child can have.
+
+SAFEAREA  neeed to be used for seeing containers in ui.
+
+common commands 
+### 1 SAFEAREA
+- to see widget wuthin ui(under notch of display)
+### 2 stateless widget
+-Stateless widget are useful when the part of the user interface you are describing does not depend on anything other than the configuration information in the object itself
+### 3 column 
+ & rows -can have more child.can be further modified.
+mainaxissize-used to change size of column.
+verticaldirection -used to change position in vertical of column.
+mainaxisalignment- change allignment of multiple column as per start position.(vertical)
+crossaxisaligmenrt-change  alignmnet in horizontaly.
+sizedbox - used to provide space between columns.
+
+
+### 4 scaffold - its  class with more features, we can change  bg color,add text,app bar,so on... 
+
+## FLUTTER CHEATSHEET
+[Flutter layout cheatsheet] (https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e)
