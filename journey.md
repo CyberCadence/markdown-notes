@@ -94,7 +94,7 @@ pointers are address locations of the variables.eg int num. (here value of the v
 
 * [x] Intro
 * [x] Dart basics
-* [x] 
+* [x] BASIC Class & commands
 * [x] 
 
 
@@ -171,3 +171,14 @@ sizedbox - used to provide space between columns.
 
 ## FLUTTER CHEATSHEET
 [Flutter layout cheatsheet] (https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e)
+
+## Flutter functions
+similiar to other languages , functions have same action here & same syntax.
+
+## flutter packages
+contains lot of packages which is been uploaded by devs.& also by google team.
+its prebuild package can be add to our project by  add to .yaml file & add to project by import.
+
+(https://pub.dev/){flutter packages }
+## ARROW FUNCTIONS
+these are used to used when one line of code is to execute.else { }is used,
