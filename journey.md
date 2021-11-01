@@ -178,7 +178,54 @@ similiar to other languages , functions have same action here & same syntax.
 ## flutter packages
 contains lot of packages which is been uploaded by devs.& also by google team.
 its prebuild package can be add to our project by  add to .yaml file & add to project by import.
-
+h
 (https://pub.dev/){flutter packages }
 ## ARROW FUNCTIONS
 these are used to used when one line of code is to execute.else { }is used,
+## CLASS & OBJECTS
+in dart alike other languages, also has class,its properties & objects
+
+
+
+eg 
+
+Class car
+{               // class
+    int noof Seats=5; //property
+    void drive(){  //object
+        print ('driving');
+    }
+}
+Car mycar=Car(); // new method (object) creation.
+by creating object we can change the value of property value initialised. 
+
+
+## constructors
+constructor is also part of classes.
+eg
+
+ Class Life{
+    int foot=2;
+    int leg=2;
+    void talk(){
+        print ('talking');
+    }
+}
+Life human=Life();
+Life snake=Life();
+
+
+print(snake.leg)
+print(human.leg)
+
+when we init both will have same output of 2.
+inorder to have diffferent values we use CONSTRUCTORS.
+
+Life(double countleg){
+    leg=countleg;
+}
+
+we can have different value. all we need to have is 
+Life human=Life(2.4);
+Life snake=Life(5.55);
+we neeed to give value during creation of object.
