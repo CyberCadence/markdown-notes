@@ -215,6 +215,10 @@ Life human=Life();
 Life snake=Life();
 
 
+
+
+
+
 print(snake.leg)
 print(human.leg)
 
@@ -229,3 +233,44 @@ we can have different value. all we need to have is
 Life human=Life(2.4);
 Life snake=Life(5.55);
 we neeed to give value during creation of object.
+
+
+## OOPS 
+there are 4 pillars in oops
+### Abstraction
+its the process of splitiing up of tasks.
+A bigger tasks are splitted in to simple jobs.
+eg in industry. production,quality, collection etc are done by different people. 
+### Encapsulation
+its the process of giving border to the area.
+
+eg in an hotel with a  waiter  & shef.both person have their won skills so they need to be in their limit. the waiter cant comment of shefs food making method & shef cant comment on waiters serving technique. so in order to have a limit every one need to be in their limit.Encapsulation does this process.
+ #ateless widgets are immutable(cant be changed).
+
+## const vs final
+both are constant values which cant be changed after init.but the difference is CONST dont have acess during runtime.
+FINAL can be used during runtime.
+
+eg const int num=5;
+ final int value=4;
+
+ // here values of both cant be chabnged but final can do task during runtime of app.
+  
+
+  ## ENUM
+  ENUM are user defined values
+  
+  enum Status { 
+   none, 
+   running, 
+   stopped, 
+   paused 
+}
+
+## Ternary operator
+ternary is used as  a alternate if else conditions.
+
+eg
+ int myage =21;
+bool buyalchahol=myage>21?true:false;
+print (buyalchohol);
