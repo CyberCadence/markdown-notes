@@ -274,3 +274,42 @@ eg
  int myage =21;
 bool buyalchahol=myage>21?true:false;
 print (buyalchohol);
+
+## ASYNCHRONOUS PROGRAMING
+for eg; if there are 3 tasks to be done.
+task 1,task 2,task 3. which are defined in same order.
+
+task1 ()
+{print('task1);
+}
+
+task2 ()
+{print('task2);
+}
+task3 ()
+{print('task3);
+}
+output will be in same order.this is synchronous method.
+
+if
+
+task2(){
+    print('task 2');
+}
+ task3 if replaced by
+task3(){
+    print('task3 '+ task 2);
+}
+here task3 value depends on value of 2 but task 2 delays by 3 sec so output printed in console will be in order of
+task 1
+task3 + null
+task 2
+
+but we can hold the order by using ASYNC & AWAIT method
+## Lifecycle method
+
+there are 3 terms 1 init
+ 1 init state- when we need to add something as soon as stateful widget  is created
+ 2 build- when we need to add something every time buid method is created  we add here.
+
+ 3 cancelation- when we need to add something when widget is destroyed. 
