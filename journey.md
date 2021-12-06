@@ -313,3 +313,58 @@ there are 3 terms 1 init
  2 build- when we need to add something every time buid method is created  we add here.
 
  3 cancelation- when we need to add something when widget is destroyed. 
+ ## dart mixin
+ mixin is method of inheriting the property of classs.
+
+
+
+ for eg 
+ class animal(){
+     void move(){
+         print('i am animal);}
+ }
+class bird(){
+    void move(){
+        print('i can  fly');
+    }
+}
+
+now by using extends keyword the bird cklass can use the property of animal class.
+eg class bird extends animal{   //likely.if we want change the value of property of parent classs we can use the  OVERWRITE  keyword
+EG 
+class bird extends animal
+{
+    @overwrite
+    void move(){
+        super.move()[
+            print('its overwritten command);
+        ]
+    }
+}
+
+} 
+
+
+ MIXIN is used when a new class is created 
+ eg 
+ a class duck is created but it can move & fly.to use both the property of animal& bird we can use mixin 
+
+
+ by eg
+  mixin bird {
+      void move(){
+          print('flyyy');
+      }
+  }
+  mixin fish{
+      void move(){
+          print('swimm);
+      }
+  }
+
+  here we can duck class which have both prop of fish & bird by using 
+
+  class duck extends animal with fish,bird{}
+
+
+  here WITH keyword using to encoperate the prop of different calss.
