@@ -345,7 +345,7 @@ class bird extends animal
 } 
 
 
- MIXIN is used when a new class is created 
+ 'MIXIN' is used when a new class is created 
  eg 
  a class duck is created but it can move & fly.to use both the property of animal& bird we can use mixin 
 
@@ -367,4 +367,12 @@ class bird extends animal
   class duck extends animal with fish,bird{}
 
 
-  here WITH keyword using to encoperate the prop of different calss.
+  here 'WITH' keyword using to encoperate the prop of different class.
+
+  # Stateful & STATELESS WIDGET
+  a stateless widget dont a fixed state.where as statefull widget have a state.actually statefull widget is not changing ,its state is been changed,variables inside state widget are not marked as final coz it might change as per ui.after making changes in the state in stateful widget then we make a copy of it.
+
+  in stateless widget all prop neeed to be declared as final,but if need to update the property ina stateless widget then we need to create a new constructor. 
+
+
+  
