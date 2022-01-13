@@ -96,7 +96,17 @@ pointers are address locations of the variables.eg int num. (here value of the v
 * [x] Dart basics
 * [x] BASIC Class & commands
 * [x] 
-
+* [x]
+* [x] 
+* [x] 
+* [x] 
+* [x] 
+* [x]
+* [x] 
+* [x] 
+* [x] 
+* [x] 
+* [x]
 
 
 
@@ -375,4 +385,235 @@ class bird extends animal
   in stateless widget all prop neeed to be declared as final,but if need to update the property ina stateless widget then we need to create a new constructor. 
 
 
+# STATIC
+
+if we need to create a constatnt value inside a class  STATIC keyword used.
+
+void main(){
+circle firstcircle=circle();  //object of class
+
+firstcircle.areac;    // by ading static keyword we dont need to use () to call the method ,if no static is used firstcircle().areac; normal call
+
+}
+
+
+
+class circle{
+
+    static const double pi=3.14;  // static
+ keyword used so value wont change in any object of the class
+    static void area(double radius){
+      double  areac=2*pi*radius;
+      print(areac);
+
+
+    }
+}
+
+
+
+# STREAMBUILDER WIDGET
+a stream builder is used in firebase related apps,for eg we are creating  a  chat app the data is stored in a db, 
+
+in chat screen user sends chat messege & also can see previous chats of same user & other  users.
+
+sp everytime new meseges is been stored in db so user need to get updated chat ata in a widget in such case stream builder is used.
+
+Streambuilder(){
+    stream:  property used to fetch where the data is stored
+    builder: property is to give the idea of constructing the widget while new data is been updated,  
+
+    ## watch flashcaht app =>189 video for more info (angela yu udemy)
+}  
+
+
+
+  # STATE MANAGEMENT
+ STATE is  defined data,all the value of data summup ons to form the state.eg
+ in a stateful widget properties are not defined as final, coz it may change.
+ if a bool data type is declared,& the value of the data is stored by the help of state management system.here the saved data is not big to save in DATA BASE but these small data requires to run the app.
+
+ more precisely , the informations to be remembered for running the app is called DATA. WE CAN CREATE state with EVERY DATAtypes in flutter. there are differnet types of state management in flutter (available in pub.dev)
+ .flutter defined state mangement is SETSTATE(){};
+ every time we use settstate the widget inside stateful widget is been re created.its only applicable in stateful widget.
   
+# NULL SAFETY
+eg 
+   void main(){
+       string name;
+       print(name.lenght);
+
+}
+in this we get error as value of name is not declared(null),mostly these errors are flagged  during run time of app.when null safety feature is enabled these errors are flagged during compile time so we can resolve the error before it reaches the user ui.
+
+as null safety in introduced in flutter 2.0, no variables cant be declared as null.
+if we need to declare a variable as null use '?'
+eg 
+void main(
+    {
+    string? name
+    print(name?.length);
+}
+here by using '?' after name variable,the part after '/' is not executed if value of variable is  null else it is executed.
+
+})
+
+## NOTE: DIFF BETWEEN METHOD -OBJECTS-PROPERTIES -CONSTRUCTORS
+
+
+
+    class is a combination of both method  & property
+    eg class car{
+        string wheel='ofspring'; // properties of class
+        int no of wheel= 5;
+
+        drive(){
+            print('driving);
+        }; // method of class car
+    }
+ 
+in case of object
+
+it is created as a instance of class
+eg   car audi=car();  // type of object //name of object // instance of class  
+
+
+* object of class can acess both property & method of a class
+
+
+In case of constructor ,it holds the same name of the class followed by parenthesis,
+eg car(){
+    print('sss');
+}
+## PROVIDER STATE MANAGEMENT
+provider is a package .
+we can pass vales from a parent widget to subclass by adding provider & listeners.
+
+* changeNotifier() class used to inform listeners  that any update from this  class must be updated
+
+###  NB : PROJECTS IN SEPERATE REPO
+
+
+
+
+----
+
+
+ -[Toc](#table-of-content)
+ 
+
+
+
+ ## 
+
+
+#  PYTHON
+
+
+* [x] Intro
+* [x] Data types
+* [x] BASIC Class & commands
+* [x] 
+* [x]
+* [x] 
+* [x] 
+* [x] 
+* [x] 
+* [x]
+* [x] 
+* [x] 
+* [x] 
+* [x] 
+* [x]
+
+
+
+## INTRO
+
+
+
+
+
+
+
+## DATA TYPES
+
+
+INT-5
+FLOAT-5.2
+STRING-'one'
+
+### dir()
+dir() is a function in python ,shows possibilities to do with a list[].
+### help(str)- gives the list methods avail for string
+
+
+* in python inentation is important
+
+
+apart from c++ in python
+
+if num%2==0:  // column is used,no  parenthesis                                     conditions 
+ print("odd")
+else:
+ print("even")
+
+
+ ### elif
+
+ more like a else if
+
+ if a<12:
+  print ("under 12")
+ elif a<18:
+  print("under 18")
+ else: 
+ print("adult +")  
+
+
+ ## Logical Operat
+
+ AND ,OR ,NOT
+
+ ASKPYTHON.COM - documentation for python  
+ # LIST(arrays)  
+ oddnumbers=[1,3,5]  // syntax for array & assign values
+ print(oddnumbers[2]) // syntax for print value from a array
+print(oddnumbers[-1])// syntax for printing final value in the array (counting in backward order)
+ 
+
+ array documentation has functionalities of arrays  like append,extend
+
+ ## Nested List
+   we can insert multiple lists within a list
+   eg
+
+   fruits=["starwabery","apple","orange"]
+  vegetables= ["cabage","tomato","ladies finger"]
+
+  food=["fruits","vegetables"]
+
+  if we print print(food), we will get both list seperated.
+
+
+  ## common error  within list
+
+  the total number of elements in a array is always total-1
+  ie  food=["cherry","apple","cake"]
+   nos=len(food)
+   result nos will be 3, if we call for food[3] it will end up in error showing "exceeded limit"
+    so the solution is final length of array will be always final length -1 else it end up in error
+
+# loops in python
+
+## loop with in a list
+ numbers=[2,5,58,8];
+ for  number in numbers :
+  print(number)
+output will be 2 5 58
+
+
+## loop withina range
+ for number in range(1,100,2):  //  1 is start point. 100 is endpoint(100-1), 2 is loop difference
+
+
