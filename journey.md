@@ -174,7 +174,7 @@ mainaxissize-used to change size of column.
 verticaldirection -used to change position in vertical of column.
 mainaxisalignment- change allignment of multiple column as per start position.(vertical)
 crossaxisaligmenrt-change  alignmnet in horizontaly.
-sizedbox - used to provide space between columns.
+    sizedbox - used to provide space between columns.
 
 
 ### 4 scaffold - its  class with more features, we can change  bg color,add text,app bar,so on... 
@@ -491,6 +491,91 @@ we can pass vales from a parent widget to subclass by adding provider & listener
 
 * changeNotifier() class used to inform listeners  that any update from this  class must be updated
 
+# dart data type &  its properties,method
+## String
+
+``` 
+String person="diljith";
+
+##properties
+
+print(person.length);
+print(person.isEmpty);
+
+##methods
+print(person.toLowercase());
+print(person.toUppercase());
+
+```
+##  int
+```
+int number=20;
+
+##properties
+print(number.isEven);      output= true
+print(number.isOdd);       output=false
+print(number.is Negative);  output=false
+
+```
+## double
+```
+double number=220.5;
+## method
+print(number.round());
+```
+# List
+
+```
+ List<String>Students=["dil","kishan","gokul"];
+
+ ##properties
+ print(Students.first);
+ print(Students.isEmpty);
+ print(Students.isNotEmpty);
+ print(Students.length);
+ print(Students.last);
+ 
+
+ #methods
+
+ Students.add("neymar");        //to add new value to list,but it will be aded at last
+
+ Students.insert(0,"ronaldo");   //to add value to a particular position in list
+
+ Students.remove("neymar");  //tp remove value in list
+Students.removeAt(2);       // remove data aspper position
+```
+## Map (data type)
+
+```
+
+Map<String,dynamic>student={"diljith":"cse","eldo":26}
+
+
+
+## property
+
+print(student.length);      // for length of data type ,output :2
+
+print(student.isEmpty);      //check wheather has data , output :false
+
+print(student.isNotEmpty);  // telling that map is not empty ,output:true
+
+print(student.keys);        // to print only keys of map
+
+print(student.values);      //to print values
+
+## methods
+
+student.addAll({"eepan":88,"sarayu":30});       //to add new value or values in a map with key & values
+
+student.clear();        //clear all data in a map
+student.remove("sarayu");       //to remove data both key & its value.
+
+```
+
+
+
 ###  NB : PROJECTS IN SEPERATE REPO
 
 
@@ -607,13 +692,87 @@ print(oddnumbers[-1])// syntax for printing final value in the array (counting i
 # loops in python
 
 ## loop with in a list
+```
  numbers=[2,5,58,8];
- for  number in numbers :
+ for number in numbers:
   print(number)
+  ```
 output will be 2 5 58
 
 
 ## loop withina range
  for number in range(1,100,2):  //  1 is start point. 100 is endpoint(100-1), 2 is loop difference
 
+
+# Functions 
+declaration syntax  = 
+
+def move():
+  print("moved")       //look for intentation 
+  
+  # TUPINS
+  tupins are immutable
+  eg of tupin creation
+   coordinates=(4,5)   /n
+
+   print(coordinates)
+   or print(coordinate[1])
+
+   tupins are like list but values in tupins cant be changed.
+   
+   
+# Dictionary
+Dictionaries are used to store data values in key:value pairs.
+
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+eg:
+```
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang", 
+  "year": 1964
+}
+```
+in dictionary using for loop we can print eah term 
+```
+program_data={"brand": "Ford"
+  "model": "Mustang" 
+  "year": 1964}
+  for (key in program_data):
+   print key 
+   ```
+   output will be
+   model
+   year
+
+   to print the values
+   ```
+   program_data[key]
+   ```
+   this will list the value of keys one by one
+
+   ### dictionary with in a dictionary & loop with in  a dictionary 
+
+   ```
+   ### normal dictionary declaration
+
+   countries_travelled={"france":"beatiful country","germany":"mechancial city"}
+ ```
+ ```
+ ## list in a dictionary
+ 
+ countries travelled={"asia":[india,pakisthan,china]}
+ ```
+```
+##dictionary with in dictionary
+
+ countries_travelled={"asia":{"india":["kerala","tamilnadu","karnataka"],"pakistan":"ahamedabad"}}
+ ```
+```
+ we cant declare as
+ countries_travelled={"asia":"india","pakistan"}
+
+ either it should be in a list or dict
+```
+# WHILE LOOP
 
